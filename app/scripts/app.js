@@ -15,7 +15,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'formio',
+    'ngFormBuilder'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,3 +35,11 @@ angular
         redirectTo: '/'
       });
   });
+
+angular
+  .module('angularFormioBuilderApp')
+  .config([
+    'formioComponentsProvider',
+    function (formioComponentsProvider) {
+      
+    }]);
