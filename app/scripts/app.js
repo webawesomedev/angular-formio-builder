@@ -16,8 +16,11 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ui.bootstrap',
+    'ui.select',
     'formio',
-    'ngFormBuilder'
+    'ngFormBuilder',
+    'ngJsonExplorer'
   ])
   .config(function ($routeProvider) {
     $routeProvider
