@@ -22,7 +22,7 @@ angular
     'ngFormBuilder',
     'ngJsonExplorer'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -37,6 +37,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+    $httpProvider.useApplyAsync(true);
   });
 
 angular
@@ -44,5 +45,5 @@ angular
   .config([
     'formioComponentsProvider',
     function (formioComponentsProvider) {
-      
+      console.log(formioComponentsProvider);
     }]);
