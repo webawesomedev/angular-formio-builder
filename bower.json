@@ -12,8 +12,7 @@
     "angular-touch": "^1.4.0",
     "ng-formio-builder": "git@github.com:webawesomedev/ngFormBuilder.git#v2.31.1",
     "ng-formio": "git@github.com:webawesomedev/ngFormio.git#v2.31.2",
-    "ng-json-explorer": "*",
-    "ckeditor": "^4.9.1"
+    "ng-json-explorer": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
