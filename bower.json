@@ -10,7 +10,7 @@
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
-    "ng-formio-builder": "git@github.com:webawesomedev/ngFormBuilder.git#3.0.2",
+    "ng-formio-builder": "git@github.com:webawesomedev/ngFormBuilder.git#3.0.3",
     "ng-formio": "git@github.com:webawesomedev/ngFormio.git#v2.32.0",
     "ng-json-explorer": "*"
   },
