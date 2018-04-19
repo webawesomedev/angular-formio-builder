@@ -13,4 +13,18 @@ angular
             return httpError;
           });
     };
+    this.post = function(url, data) {
+      return $http({
+        url: url,
+        method: 'POST',
+        data: data,
+      })
+        .then(
+          function (response) {
+            return response;
+          },
+          function (httpError) {
+            return httpError;
+          });
+    };
   }]);

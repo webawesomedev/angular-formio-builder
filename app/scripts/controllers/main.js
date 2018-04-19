@@ -21,12 +21,8 @@ angular.module('angularFormioBuilderApp')
 
     $scope.renderForm = true;
 
-    apiService.fetch('https://httpbin.org/uuid').then(function(data) {
-      console.log(data);
-    });
-
     $scope.saveForm = function() {
-      console.log($scope.form);
+      apiService.post(apiURL + '.IScript_SaveFormMetadata', {form: $scope.form});
     };
 
     $scope.$on('formUpdate', function(event, form) {
