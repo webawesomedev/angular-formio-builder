@@ -22,7 +22,7 @@ angular.module('angularFormioBuilderApp')
     $scope.renderForm = true;
 
     $scope.saveForm = function() {
-      apiService.post(apiURL + '.IScript_SaveFormMetadata', "form=" + $scope.form);
+      apiService.post(apiURL + '.IScript_SaveFormMetadata?postDataBin=y', {form: $scope.form});
     };
 
     $scope.$on('formUpdate', function(event, form) {
